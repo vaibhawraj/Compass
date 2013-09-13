@@ -1,3 +1,47 @@
 Advisory Moniter
 ================
 	Advisory moniter is an app to keep an eye on your health related issue like calories consumption, calories burn, heart beat, pulse rate etc.
+
+Prerequiste
+===========
+	1> node.js
+	2> PhoneGAP
+	3> Android SDK
+	4> Accelerometer & Compass Plugins for PhoneGAP
+	
+Installing node.js
+==================
+
+	1> Download "node-v0.10.18-linux-x64.tar.gz" from nodejs.org
+	2> Run following command on terminal
+		$ tar -xzf node-v0.10.18-linux-x64.tar.gz
+		$ cd node-v0.10.18-linux-x64
+		$ sudo make
+		$ sudo make install
+
+Installing PhoneGAP
+===================
+	1> sudo npm install -g phonegap
+
+Installing Accelerometer & Compass Plugins for PhoneGAP
+=======================================================
+
+		$ phonegap local plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-device-motion.git
+		$ phonegap local plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-device-orientation.git
+		$ phonegap local plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-geolocation.git
+		
+Android SDK
+===========
+	1> Download Android SDK from developers.android.com
+	2> Run following command on terminal
+		$ export PATH = ${PATH}:/adt-bundle/sdk/tools:/adt-bundle/platform-tools
+		
+	   where adt-bundle is the location of android sdk on your local system
+	   
+Getting Clone on your local system
+==================================
+		$ git clone https://github.com/vaibhawraj/Compass.git
+		
+Building for Android
+====================
+		$ phonegap build android
